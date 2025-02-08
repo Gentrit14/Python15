@@ -19,7 +19,7 @@ import pandas as pd
 # print(size)
 
 
-products = ["apples" , "oranges" , "watermelons" , "peaches"]
+products = ['apples' , 'oranges' , 'watermelons' , 'peaches']
 
 sales = [150, 200 , 350 , 90]
 
@@ -29,7 +29,9 @@ total_sales = sales_series.sum()
 
 best_selling_product = sales_series.idsmax()
 
-print(f"Best selling products:", {best_selling_product})
+highest_number = sales_series.max()
+
+print(f"Best selling products: {best_selling_product} with {highest_number} ")
 
 
 
